@@ -3,11 +3,62 @@
 <head lang="uk">
     <meta charset="UTF-8">
     <title>My Page</title>
-
-
+    <script	type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script	type="text/javascript" src="main.js"></script>
     <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 <body>
-<h1>Hello World</h1>
+<div class="main">
+	<div class="grid">
+		<div class="cell first ">
+			<div class="first-content">
+				<div class="segment form">
+					<div>
+						<button class="form-button">Add</button>
+						<span class="form-name"><input type="text" id="item-name" placeholder="Goods' name" /></span>
+					</div>
+				</div>
+				<div class="item-list">
+					<div class="template">
+						<div class="segment item hidden">
+							<div class="cell item-name">
+							</div>
+							<div class="cell item-amount">
+								<button class="rem round disabled" disabled>-</button>
+								<div class="label">1</div>
+								<button class="add round">+</button>
+							</div>
+							<div class="cell item-buy">
+								<button class="buy">Buy</button>
+								<button class="delete">x</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cell second ">
+			<div class="second-content">
+				<div class="segment">
+					Left
+				</div>
+				<div class="segment" id="left">
+					<div class="hidden left-template">
+						<span class="label">
+							<span class="left-name"></span>
+							<span class="left round">1</span>
+						</span>
+					</div>
+				</div>
+				<div class="segment">
+					Bought
+				</div>
+				<div class="segment" id="bought">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 </body>
 </html>
